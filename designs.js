@@ -13,7 +13,6 @@ function makeGrid(height, width) {
       grid += '</tr>';
   }
   table.innerHTML = grid;
-// calls a function to determine what happens when a cell is clicked
   colorClick();
 }
 
@@ -38,7 +37,6 @@ function submitForm() {
   makeGrid(height, width);
 }
 
-// calls the submitForm function
 document.getElementById('sizePicker').onsubmit = function () {
   submitForm();
 };
